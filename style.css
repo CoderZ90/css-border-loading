@@ -1,0 +1,43 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    background: #e4e3e3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading
+{
+    position: relative;
+    display: inline-block;
+    margin: 5rem;
+    border-width: 30px;
+    border-radius: 50px;
+
+    animation: animate 1s linear infinite;
+
+    border-style: double;
+    border-color: #444 transparent;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
